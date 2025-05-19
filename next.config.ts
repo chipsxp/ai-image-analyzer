@@ -4,17 +4,13 @@ const nextConfig: NextConfig = {
   experimental: {
     serverActions: {
       allowedOrigins: [
-        "http://localhost:3000", 
-        "http://192.168.0.43:3000"
+        "http://localhost:3000",
+        "https://ai-image-analyzer-production.up.railway.app",
       ],
       bodySizeLimit: "5mb",
     },
   },
-  allowedDevOrigins: [
-    "http://localhost:3000",
-    "http://192.168.0.43:3000",
-    "http://10.111.1.253:3000",
-  ],
+  allowedDevOrigins: ["http://localhost:3000"],
 };
 
 
